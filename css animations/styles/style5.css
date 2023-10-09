@@ -1,0 +1,48 @@
+.animated-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  html{
+    background-image: url(../images/font.jpg);
+    background-size: cover;
+}
+  .animated-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: animate-item 1s ease-in-out forwards;
+  }
+  
+  @keyframes animate-item {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animated-item img {
+    width: 300px;
+  }
+  
+  .animated-item h3 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .animated-item p {
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+    margin-top: 10px;
+  }

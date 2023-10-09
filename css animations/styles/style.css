@@ -1,0 +1,68 @@
+.bb{
+    background-color: brown;
+}
+
+body{
+margin: 0;
+padding: 0;
+}
+
+html {
+    background: url('https://catherineasquithgallery.com/uploads/posts/2021-02/1612761180_134-p-goluboi-fon-minimalizm-225.png') no-repeat; 
+    background-size: cover; 
+  }
+
+
+.solid  {
+    width: 100%;
+    height: 250px;
+    background-color: aqua;
+    border-bottom: 15px solid black;
+    position: absolute;
+    top: -250px;
+    transition: top 1s ease-in-out;
+    animation: render 4s ease-in-out infinite;
+}
+.solid p{
+    text-align: center;
+    font-size: 50px;
+    margin: 100;
+}
+.solid:hover{
+    top: 0;
+}
+@keyframes render{
+    0%{
+        background-color: rgb(153, 0, 153)
+    }
+    35%{
+        background-color: rgb(204, 0, 102)
+    }
+    60%{
+        background-color: rgb(255, 0, 255)
+    }
+    100%{
+        background-color: rgb(153, 51, 255)
+    }
+}
+.btn{
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    width: 100px;
+    height: 30px;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    background-color: aqua;
+
+    left: -10px;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+}
+.btn:hover::before{
+    left: calc(100%+10px);
+    transition: left 500ms;
+}

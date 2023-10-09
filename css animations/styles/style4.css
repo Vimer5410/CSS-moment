@@ -1,0 +1,67 @@
+.text-animation h1 {
+    font-size: 48px;
+    color: #000;
+    text-transform: uppercase;
+    animation: animate-text 3s ease-in-out infinite;
+  }
+  
+  .text-animation p {
+    font-size: 24px;
+    color: #888;
+    animation: animate-text 3s ease-in-out infinite;
+  }
+
+  html{
+    background-image: url(../images/main.jpg);
+    background-size: cover;
+}
+  @keyframes animate-text {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(10%);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-5%);
+      opacity: 1;
+    }
+    40% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    50% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    60% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    70% {
+      transform: translateX(5%);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(-10%);
+      opacity: 1;
+    }
+    90% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+  
+  .text-animation h1:nth-child(2) {
+    animation-delay: -2s;
+  }
