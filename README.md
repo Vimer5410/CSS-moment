@@ -1,2 +1,2 @@
 # CSS-moment
-some interesting css animations🤯
+some interesting homemade css animations🤯
